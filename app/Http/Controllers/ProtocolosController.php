@@ -43,7 +43,7 @@ class ProtocolosController extends Controller
 
         ]);
         
-        return "Seu protocolo foi enviado!";
+        return redirect()->back();;
     }
 
     public function exibirTodos(Request $request){

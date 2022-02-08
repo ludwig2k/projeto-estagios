@@ -47,7 +47,7 @@ class PessoasController extends Controller
             'nome.required' => 'O campo de nome é obrigatorio!',
             'sexo.required' => 'O campo de sexo é obrigatorio!',
             'data_nascimento.required' => 'O campo de data de nascimento é obrigatorio!',
-            'cpf.required' => 'O campo de CPF é obrigatorio!',
+            'cpf.required' => 'O campo de CPF é obrigatorio!'
         ],
     );
         
@@ -72,7 +72,7 @@ class PessoasController extends Controller
             'cpf' => $cpf
         ]);
 
-       return "Seu cadastro foi enviado!";
+       return redirect()->back();
     }
 
     /**
